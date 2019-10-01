@@ -5,6 +5,12 @@
 libraries/Assembly-CSharp*.dll
 libraries/UnityEngine*.dll
 
+# External Tools
+resources/ILSpy
+resources/kParser
+resources/Spriter
+resources/uTiny
+data/ripped
 
 # User-specific files
 *.suo

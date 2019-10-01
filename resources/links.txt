@@ -1,0 +1,5 @@
+Here are some links to tools I used in the creation of my mods!
+https://github.com/icsharpcode/ILSpy/releases
+https://sourceforge.net/projects/utinyripper/files/
+https://github.com/daviscook477/kparser/releases
+https://brashmonkey.com/download-spriter-pro/

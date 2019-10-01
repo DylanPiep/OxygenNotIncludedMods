@@ -36,6 +36,10 @@ namespace StorageCompressor
             buildingDef.Floodable = false;
             buildingDef.AudioCategory = "Metal";
             buildingDef.Overheatable = false;
+            buildingDef.RequiresPowerInput = true;
+            buildingDef.EnergyConsumptionWhenActive = 960;
+            buildingDef.SelfHeatKilowattsWhenActive = 1000;
+            buildingDef.PowerInputOffset = new CellOffset(-1, 1);
             return buildingDef;
         }
 
@@ -44,10 +48,13 @@ namespace StorageCompressor
             SoundEventVolumeCache.instance.AddVolume("storagelocker_kanim", "StorageLocker_Hit_metallic_low", NOISE_POLLUTION.NOISY.TIER1);
             Prioritizable.AddRef(go);
             Storage storage = go.AddOrGet<Storage>();
-            storage.capacityKg = 20000000000;
+            storage.capacityKg = 20000 * (8) * (5) * (3) * (2);
+            // 10, 6, 3, 2
+            // 10, 5, 4, 2
             storage.showInUI = true;
             storage.allowItemRemoval = true;
             storage.showDescriptor = true;
+            
             List<Tag> tags = new List<Tag>();
             tags.AddRange(STORAGEFILTERS.BAGABLE_CREATURES);
             tags.AddRange(STORAGEFILTERS.NOT_EDIBLE_SOLIDS);
