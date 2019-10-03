@@ -54,7 +54,6 @@ namespace StorageCompressor
             storage.showInUI = true;
             storage.allowItemRemoval = true;
             storage.showDescriptor = true;
-            
             List<Tag> tags = new List<Tag>();
             tags.AddRange(STORAGEFILTERS.BAGABLE_CREATURES);
             tags.AddRange(STORAGEFILTERS.NOT_EDIBLE_SOLIDS);

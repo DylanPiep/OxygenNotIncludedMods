@@ -4,6 +4,8 @@
 # ONI & Unity Engine Libraries
 libraries/Assembly-CSharp*.dll
 libraries/UnityEngine*.dll
+libraries/assembly-src
+Assembly/*
 
 # External Tools
 resources/ILSpy
